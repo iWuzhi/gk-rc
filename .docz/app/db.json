@@ -1,0 +1,41 @@
+{
+  "config": {
+    "title": "iWuzhi-rc",
+    "description": "This is a geek react components.",
+    "menu": [],
+    "version": "1.0.0",
+    "repository": "https://github.com/iWuzhi/gk-rc",
+    "native": false,
+    "codeSandbox": true,
+    "themeConfig": {},
+    "separator": "-",
+    "src": "./src"
+  },
+  "entries": [
+    {
+      "key": "Button/demo.mdx",
+      "value": {
+        "name": "按钮",
+        "route": "/button",
+        "menu": "通用",
+        "id": "afb48fdaa3f9b465a9ec8181cd64c3ac",
+        "filepath": "Button/demo.mdx",
+        "link": "https://github.com/iWuzhi/gk-rc/edit/master/src/Button/demo.mdx",
+        "slug": "button-demo",
+        "headings": [
+          {
+            "slug": "按钮",
+            "depth": 1,
+            "value": "按钮"
+          },
+          {
+            "slug": "基本使用",
+            "depth": 2,
+            "value": "基本使用"
+          }
+        ]
+      }
+    }
+  ],
+  "props": []
+}

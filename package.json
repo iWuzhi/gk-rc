@@ -1,0 +1,35 @@
+{
+  "name": "gk-rc",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:iWuzhi/gk-rc.git",
+  "author": "iWuzhi <Kaer_600776@163.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@storybook/addon-actions": "^5.1.9",
+    "@storybook/addon-links": "^5.1.9",
+    "@storybook/addons": "^5.1.9",
+    "@storybook/react": "^5.1.9",
+    "@storybook/theming": "^5.1.9",
+    "babel-loader": "^8.0.6",
+    "docz": "^1.2.0",
+    "docz-theme-default": "^1.2.0",
+    "less-loader": "^5.0.0",
+    "webpack": "^4.35.3",
+    "webpack-cli": "^3.3.5"
+  },
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.4.1",
+    "less": "^3.9.0",
+    "normalize.css": "^8.0.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6"
+  },
+  "scripts": {
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "docz:dev": "docz dev",
+    "docz:build": "docz build"
+  }
+}

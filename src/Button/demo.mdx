@@ -1,0 +1,30 @@
+---
+name: 按钮
+route: /button
+menu: 通用
+---
+
+
+import Button from './index';
+import { Playground, Props } from 'docz';
+
+import './demo.less';
+
+# 按钮
+
+<Props of={Button} />
+
+## 基本使用
+<Playground>
+<div style={{padding: 15}} className='demo-button'>
+  <Button>Primary</Button>
+  <Button type='secondary'>Secondary</Button>
+  <Button type='success'>Success</Button>
+  <Button type='danger'>Danger</Button>
+  <Button type='warning'>Warning</Button>
+  <Button type='info'>Info</Button>
+  <Button type='light'>Light</Button>
+  <Button type='dark'>Dark</Button>
+  <Button type='link'>Link</Button>
+</div>
+</Playground>
