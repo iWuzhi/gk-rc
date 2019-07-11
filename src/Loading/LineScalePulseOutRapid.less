@@ -1,0 +1,50 @@
+
+
+.gk-rc-loading-line-scale-pulse-out-rapid {
+  display: inline-block;
+  padding: 0 0.4rem;
+  & > div {
+    background-color: currentColor;
+    width: 0.24rem;
+    height: 2rem;
+    border-radius:0.2rem;
+    margin: 0.2rem;
+    animation-fill-mode: both;
+    display: inline-block;
+    animation: line-scale-pulse-out-rapid 0.9s 0s infinite cubic-bezier(.11, .49, .38, .78);
+    &:nth-child(1), &:nth-child(5) {
+      animation-delay: 0.5s !important;
+    }
+    &:nth-child(2), &:nth-child(4) {
+      animation-delay: 0.25s !important;
+    }
+  }
+  &-sm {
+    & > div {
+      width: 0.12rem;
+      height: 1rem;
+      &:nth-child(1), &:nth-child(5) {
+        display: none;
+      }
+    }
+  }
+  &-lg {
+    & > div{
+      width: 0.38rem;
+      height: 3rem;
+    }
+  }
+}
+
+
+@keyframes line-scale-pulse-out-rapid {
+  0% {
+    transform: scaleY(1);
+  }
+  80% {
+    transform: scaleY(0.3);
+  }
+  90% {
+    transform: scaleY(1);
+  }
+}
