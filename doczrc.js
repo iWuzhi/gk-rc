@@ -7,6 +7,8 @@ export default {
   title: 'iWuzhi-rc',
   description: 'This is a geek react components.',
   src: './src',
+  propsParser: true,
+  indexHtml: './.docz/index.html',
   modifyBundlerConfig: (config) => {
     config.module.rules.push({
       test: /\.less/,
