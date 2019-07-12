@@ -15,6 +15,87 @@
   },
   "entries": [
     {
+      "key": "index.mdx",
+      "value": {
+        "name": "Index",
+        "route": "/",
+        "id": "6576455a124f9aaefd860597f03a8fe4",
+        "filepath": "index.mdx",
+        "link": "https://github.com/iWuzhi/gk-rc/edit/master/src/index.mdx",
+        "slug": "index",
+        "menu": "",
+        "headings": []
+      }
+    },
+    {
+      "key": "Loading/demo.mdx",
+      "value": {
+        "name": "加载动画",
+        "route": "/loading",
+        "menu": "反馈",
+        "id": "f75a0a76a30ecbd7ddf1c058a1122065",
+        "filepath": "Loading/demo.mdx",
+        "link": "https://github.com/iWuzhi/gk-rc/edit/master/src/Loading/demo.mdx",
+        "slug": "loading-demo",
+        "headings": [
+          {
+            "slug": "加载动画",
+            "depth": 1,
+            "value": "加载动画"
+          },
+          {
+            "slug": "3d样式",
+            "depth": 2,
+            "value": "3D样式"
+          },
+          {
+            "slug": "普通样式",
+            "depth": 2,
+            "value": "普通样式"
+          },
+          {
+            "slug": "变大的动画",
+            "depth": 2,
+            "value": "变大的动画"
+          },
+          {
+            "slug": "大小",
+            "depth": 2,
+            "value": "大小"
+          },
+          {
+            "slug": "线条缩放动画",
+            "depth": 2,
+            "value": "线条缩放动画"
+          }
+        ]
+      }
+    },
+    {
+      "key": "TextTip/demo.mdx",
+      "value": {
+        "name": "文字提示",
+        "route": "/text_tip",
+        "menu": "反馈",
+        "id": "fd3f22dba991de314a09b428f2bd4766",
+        "filepath": "TextTip/demo.mdx",
+        "link": "https://github.com/iWuzhi/gk-rc/edit/master/src/TextTip/demo.mdx",
+        "slug": "text-tip-demo",
+        "headings": [
+          {
+            "slug": "文字提示",
+            "depth": 1,
+            "value": "文字提示"
+          },
+          {
+            "slug": "基本使用",
+            "depth": 2,
+            "value": "基本使用"
+          }
+        ]
+      }
+    },
+    {
       "key": "Button/demo.mdx",
       "value": {
         "name": "按钮",
@@ -67,338 +148,17 @@
           }
         ]
       }
-    },
-    {
-      "key": "Loading/demo.mdx",
-      "value": {
-        "name": "加载动画",
-        "route": "/loading",
-        "menu": "反馈",
-        "id": "f75a0a76a30ecbd7ddf1c058a1122065",
-        "filepath": "Loading/demo.mdx",
-        "link": "https://github.com/iWuzhi/gk-rc/edit/master/src/Loading/demo.mdx",
-        "slug": "loading-demo",
-        "headings": [
-          {
-            "slug": "加载动画",
-            "depth": 1,
-            "value": "加载动画"
-          },
-          {
-            "slug": "普通样式",
-            "depth": 2,
-            "value": "普通样式"
-          },
-          {
-            "slug": "变大的动画",
-            "depth": 2,
-            "value": "变大的动画"
-          },
-          {
-            "slug": "大小",
-            "depth": 2,
-            "value": "大小"
-          },
-          {
-            "slug": "线条缩放动画",
-            "depth": 2,
-            "value": "线条缩放动画"
-          }
-        ]
-      }
-    },
-    {
-      "key": "TextTip/demo.mdx",
-      "value": {
-        "name": "文字提示",
-        "route": "/text_tip",
-        "menu": "反馈",
-        "id": "fd3f22dba991de314a09b428f2bd4766",
-        "filepath": "TextTip/demo.mdx",
-        "link": "https://github.com/iWuzhi/gk-rc/edit/master/src/TextTip/demo.mdx",
-        "slug": "text-tip-demo",
-        "headings": [
-          {
-            "slug": "文字提示",
-            "depth": 1,
-            "value": "文字提示"
-          },
-          {
-            "slug": "基本使用",
-            "depth": 2,
-            "value": "基本使用"
-          }
-        ]
-      }
     }
   ],
   "props": [
     {
-      "key": "src/Loading/Spinners.jsx",
+      "key": "src/Loading/BoxRotate.jsx",
       "value": [
         {
           "description": "",
-          "displayName": "Spinners",
+          "displayName": "BoxRotate",
           "methods": [],
-          "actualName": "Spinners"
-        }
-      ]
-    },
-    {
-      "key": "src/Loading/index.jsx",
-      "value": [
-        {
-          "description": "",
-          "displayName": "Loading",
-          "methods": [],
-          "actualName": "Loading",
-          "props": {
-            "type": {
-              "type": {
-                "name": "enum",
-                "value": [
-                  {
-                    "value": "'spinners'",
-                    "computed": false
-                  },
-                  {
-                    "value": "'line-scale-pulse-out-rapid'",
-                    "computed": false
-                  }
-                ]
-              },
-              "required": false,
-              "description": "",
-              "defaultValue": {
-                "value": "'spinners'",
-                "computed": false
-              }
-            },
-            "size": {
-              "type": {
-                "name": "enum",
-                "value": [
-                  {
-                    "value": "'normal'",
-                    "computed": false
-                  },
-                  {
-                    "value": "'small'",
-                    "computed": false
-                  },
-                  {
-                    "value": "'large'",
-                    "computed": false
-                  }
-                ]
-              },
-              "required": false,
-              "description": "",
-              "defaultValue": {
-                "value": "'normal'",
-                "computed": false
-              }
-            }
-          }
-        }
-      ]
-    },
-    {
-      "key": "src/Button/index.jsx",
-      "value": [
-        {
-          "description": "",
-          "displayName": "Button",
-          "methods": [
-            {
-              "name": "handleClick",
-              "docblock": null,
-              "modifiers": [],
-              "params": [
-                {
-                  "name": "e",
-                  "type": null
-                },
-                {
-                  "name": "startShow",
-                  "type": null
-                }
-              ],
-              "returns": null
-            }
-          ],
-          "actualName": "Button",
-          "props": {
-            "type": {
-              "type": {
-                "name": "enum",
-                "value": [
-                  {
-                    "value": "'primary'",
-                    "computed": false
-                  },
-                  {
-                    "value": "'secondary'",
-                    "computed": false
-                  },
-                  {
-                    "value": "'success'",
-                    "computed": false
-                  },
-                  {
-                    "value": "'danger'",
-                    "computed": false
-                  },
-                  {
-                    "value": "'warning'",
-                    "computed": false
-                  },
-                  {
-                    "value": "'info'",
-                    "computed": false
-                  },
-                  {
-                    "value": "'light'",
-                    "computed": false
-                  },
-                  {
-                    "value": "'dark'",
-                    "computed": false
-                  },
-                  {
-                    "value": "'link'",
-                    "computed": false
-                  }
-                ]
-              },
-              "required": false,
-              "description": "按钮类型",
-              "defaultValue": {
-                "value": "'primary'",
-                "computed": false
-              }
-            },
-            "children": {
-              "type": {
-                "name": "node"
-              },
-              "required": false,
-              "description": "按钮文案",
-              "defaultValue": {
-                "value": "'点击'",
-                "computed": false
-              }
-            },
-            "onClick": {
-              "type": {
-                "name": "func"
-              },
-              "required": false,
-              "description": "按钮点击事件",
-              "defaultValue": {
-                "value": "() => {}",
-                "computed": false
-              }
-            },
-            "disabled": {
-              "type": {
-                "name": "bool"
-              },
-              "required": false,
-              "description": "",
-              "defaultValue": {
-                "value": "false",
-                "computed": false
-              }
-            },
-            "block": {
-              "type": {
-                "name": "bool"
-              },
-              "required": false,
-              "description": "",
-              "defaultValue": {
-                "value": "false",
-                "computed": false
-              }
-            },
-            "loading": {
-              "type": {
-                "name": "bool"
-              },
-              "required": false,
-              "description": "",
-              "defaultValue": {
-                "value": "false",
-                "computed": false
-              }
-            },
-            "htmlType": {
-              "type": {
-                "name": "string"
-              },
-              "required": false,
-              "description": "",
-              "defaultValue": {
-                "value": "'button'",
-                "computed": false
-              }
-            },
-            "ghost": {
-              "type": {
-                "name": "bool"
-              },
-              "required": false,
-              "description": "",
-              "defaultValue": {
-                "value": "false",
-                "computed": false
-              }
-            },
-            "size": {
-              "type": {
-                "name": "enum",
-                "value": [
-                  {
-                    "value": "'normal'",
-                    "computed": false
-                  },
-                  {
-                    "value": "'small'",
-                    "computed": false
-                  },
-                  {
-                    "value": "'large'",
-                    "computed": false
-                  }
-                ]
-              },
-              "required": false,
-              "description": "",
-              "defaultValue": {
-                "value": "'normal'",
-                "computed": false
-              }
-            },
-            "violenceDisabled": {
-              "type": {
-                "name": "bool"
-              },
-              "required": false,
-              "description": "防暴力点击",
-              "defaultValue": {
-                "value": "true",
-                "computed": false
-              }
-            },
-            "className": {
-              "defaultValue": {
-                "value": "''",
-                "computed": false
-              },
-              "required": false
-            }
-          }
+          "actualName": "BoxRotate"
         }
       ]
     },
@@ -410,6 +170,17 @@
           "displayName": "LineScalePulseOutRapid",
           "methods": [],
           "actualName": "LineScalePulseOutRapid"
+        }
+      ]
+    },
+    {
+      "key": "src/Loading/Spinners.jsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Spinners",
+          "methods": [],
+          "actualName": "Spinners"
         }
       ]
     }

@@ -8,6 +8,7 @@ import PropTypes from 'prop-types';
 
 import LineScalePulseOutRapid from './LineScalePulseOutRapid';
 import Spinners from './Spinners';
+import BoxRotate from './BoxRotate';
 
 import './index.less';
 
@@ -25,6 +26,9 @@ export default class Loading extends Component {
       case 'line-scale-pulse-out-rapid':
         LoadingComponent = LineScalePulseOutRapid;
         break;
+      case 'box-rotate':
+        LoadingComponent = BoxRotate;
+        break;
     }
     return (
       <span className='gk-rc-loading'>
@@ -40,6 +44,6 @@ Loading.defaultProps = {
 }
 
 Loading.propTypes = {
-  type: PropTypes.oneOf(['spinners', 'line-scale-pulse-out-rapid']),
+  type: PropTypes.oneOf(['spinners', 'line-scale-pulse-out-rapid', 'box-rotate']),
   size: PropTypes.oneOf(['normal', 'small', 'large']),
 }
