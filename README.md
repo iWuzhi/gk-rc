@@ -1,4 +1,15 @@
+# 🚀 Welcome to your new awesome project!
 
-# Geek React Component
+This project has been created using **webpack scaffold**, you can now run
 
-### Loading...
+```
+npm run build
+```
+
+or
+
+```
+yarn build
+```
+
+to bundle your application
