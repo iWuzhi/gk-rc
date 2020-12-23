@@ -4,26 +4,24 @@
  */
 
 import React from 'react';
+import { NavLink } from 'react-router-dom';
+
+import { TreeView, TreeItem } from '@material-ui/lab';
+import { Divider  } from '@material-ui/core';
+
+import { useStyles } from './style';
 
 interface IProps {
 
 }
 
 const Nav: React.FC<IProps> = () => {
+  const classes = useStyles();
   return (
-    <ul className="nav flex-column" style={{ minWidth: 320, borderRight: 'solid 1px red', height: '100%' }}>
-      <li className="nav-item">
-        <a className="nav-link active" aria-current="page" href="#">Active</a>
-      </li>
-      <li className="nav-item">
-        <a className="nav-link" href="#">Link</a>
-      </li>
-      <li className="nav-item">
-        <a className="nav-link" href="#">Link</a>
-      </li>
-      <li className="nav-item">
-        <a className="nav-link disabled" href="#" tabIndex={-1} aria-disabled="true">Disabled</a>
-      </li>
+    <ul className={classes.nav}>
+      <li className={classes.group}>通用</li>
+      <hr />
+      <NavLink to='/components/button'>Button</NavLink>
     </ul>
   )
 }

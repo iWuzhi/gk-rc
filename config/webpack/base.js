@@ -106,7 +106,10 @@ module.exports = {
   },
 
   resolve: {
-    extensions: ['.tsx', '.ts', '.js']
+    extensions: ['.tsx', '.ts', '.js', '.mdx'],
+    alias: {
+      '@': path.resolve(process.cwd(), 'src')
+    },
   },
 
   optimization: {

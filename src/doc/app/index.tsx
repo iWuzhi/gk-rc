@@ -62,7 +62,6 @@ const App: React.FC<APPProps> = () => {
           <Route path="/components">
             <Components />
           </Route>
-          <Redirect path='/' to='/components' />
         </Switch>
       </main>
     </Router>

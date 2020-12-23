@@ -4,14 +4,24 @@
  */
 
 import React from 'react';
+import { Route, Switch } from 'react-router-dom';
 
+import Button from './Button';
+import { useStyles } from './style';
 interface IProps {
 
 }
 
 const Content: React.FC<IProps> = () => {
+  const classNames = useStyles();
   return (
-    <div className='p-5'>你好</div>
+    <div className={classNames.content}>
+      <Switch>
+          <Route path="/components/button">
+            <Button />
+          </Route>
+        </Switch>
+    </div>
   )
 }
 
