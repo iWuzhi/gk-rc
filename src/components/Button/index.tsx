@@ -6,17 +6,13 @@
 import * as React from 'react';
 import { Button as MButton } from '@material-ui/core';
 
-type Props = {};
-type State = {};
+export interface ButtonProps {
+  onClick?: (e: MouseEvent) => void;
+  children: React.ReactNode;
+};
 
-class Button extends React.Component<Props, State> {
-	render() {
-		return (
-			<MButton variant="contained" color="primary" disableElevation>
-				Disable elevation
-			</MButton>
-		);
-	}
+const Button: React.FC<ButtonProps> = ({ children, ...props}) => {
+  return <MButton {...props} variant="contained" color="primary" disableElevation >{children}</MButton>
 }
 
 export default Button;
