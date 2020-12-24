@@ -6,12 +6,16 @@ export const useStyles = makeStyles({
     height: '100%',
     borderRight: 'solid 1px rgba(0, 0, 0, 0.12)',
     width: '320px',
-    padding: '0 20px'
+    '& button': {
+      maxWidth: 320,
+      paddingLeft: 24,
+      '& > span': {
+        alignItems: 'flex-start',
+        textTransform: 'none'
+      },
+      '&.Mui-selected': {
+        backgroundColor: '#e0e0e0'
+      }
+    },
   },
-  group: {
-    color: 'rgba(0,0,0,.45)',
-    fontSize: 13,
-    listStyle: 'none',
-    marginBottom: 16
-  }
 });
