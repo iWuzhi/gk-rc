@@ -5,7 +5,7 @@
 
 import React, { useCallback } from 'react';
 import { Divider, Tabs, Tab } from '@material-ui/core'
-import { Link, useRouteMatch, useHistory } from 'react-router-dom';
+import { Link, useRouteMatch, useHistory, Redirect } from 'react-router-dom';
 
 import { useStyles } from './style';
 
@@ -15,11 +15,13 @@ interface IProps {
 
 const Header: React.FC<IProps> = (props) => {
   const styles = useStyles();
-  const { menu } = useRouteMatch('/:menu').params as { menu: string };
+  // @ts-ignore
+  const menu = useRouteMatch('/:menu')?.params?.menu;
   const history = useHistory();
   const onMenuChange = useCallback((e, value) => {
     history.push(`/${value}`);
   }, []);
+  if (!menu) return <Redirect to='/home' />
   return (
     <header className={styles.header}>
       <div className={styles.content}>
