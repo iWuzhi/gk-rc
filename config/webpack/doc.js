@@ -12,6 +12,7 @@ const base = require('./base');
 module.exports = merge(base, {
   entry: path.join(process.cwd(), 'src/doc/index.tsx'),
   resolve: {
+    extensions: ['.tsx', '.ts', '.js', '.mdx'],
     alias: {
       '@doc/components': path.resolve(process.cwd(), 'src/doc/app/Components')
     },

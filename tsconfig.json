@@ -15,6 +15,7 @@
     "jsx": "react",
     "allowSyntheticDefaultImports": true,
     "baseUrl": ".",
+    "declaration": true,
     "paths": {
       "@/*": ["src/*"]
     }

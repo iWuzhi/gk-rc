@@ -14,6 +14,7 @@ export const useStyles = makeStyles({
   },
   editor: {
     backgroundColor: '#000',
+    color: '#fff',
     borderRadius: 8
   },
   operation: {
