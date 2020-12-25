@@ -8,6 +8,7 @@ import ReactDOM from 'react-dom';
 
 import DocApp from './app';
 
+import '@/components/Styles';
 import './global.css';
 
 // 挂载元素

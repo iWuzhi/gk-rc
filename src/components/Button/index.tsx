@@ -5,13 +5,13 @@
 
 import React from 'react';
 
-import { Button as MUButton } from '@material-ui/core';
+import { Button as MUButton, ButtonProps as MUButtonProps } from '@material-ui/core';
 
 import { useStyles } from './style';
 
-interface IProps {}
+export type ButtonProps = MUButtonProps;
 
-const Button: React.FC<IProps> = ({ children, ...props}) => {
+const Button: React.FC<ButtonProps> = ({ children, ...props}) => {
   const styles = useStyles();
   return <MUButton className={styles.font} {...props}>{children}</MUButton>
 }
