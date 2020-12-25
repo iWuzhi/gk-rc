@@ -2,7 +2,11 @@
   "include": [
     "src/**/*"
   ],
+  "exclude": [
+    "src/doc/**/*"
+  ],
   "compilerOptions": {
+    "outDir": "lib",
     "noImplicitAny": true,
     "module": "ESNext",
     "target": "es5",
