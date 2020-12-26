@@ -1,15 +1,25 @@
-# 🚀 Welcome to your new awesome project!
 
-This project has been created using **webpack scaffold**, you can now run
+# 快速开始
 
+
+### 安装
 ```
-npm run build
-```
-
-or
-
-```
-yarn build
+npm i gk-rc --save
 ```
 
-to bundle your application
+
+### 示例
+*引入样式*
+```
+@import 'gk-rc/dist/style.css';
+```
+
+*使用组件*
+```
+import { Button } from 'gk-rc';
+
+ReactDOM.render(<Button>你好啊</Button>, mountNode);
+```
+
+### 示例模板
+https://github.com/iWuzhi/gk-rc-demo
