@@ -10,10 +10,11 @@ import { TreeView, TreeItem } from '@material-ui/lab';
 import { Divider, Tabs, Tab, MenuList, MenuItem  } from '@material-ui/core';
 
 import { useStyles } from './style';
+import routes from 'doc/app/routes.json';
 
-interface IProps {
+const componentRoutes = routes.Components || [];
 
-}
+interface IProps {}
 
 const Nav: React.FC<IProps> = () => {
   const classes = useStyles();
@@ -33,9 +34,12 @@ const Nav: React.FC<IProps> = () => {
         onChange={onMenuChange}
       >
         <Tab label="通用" disabled />
-        <Tab label="Button" value='button' />
-        <Tab label="Icon" value='icon' />
-        <Tab label="Radio" value='radio' />
+        {
+          componentRoutes.map(({ title, name: _name, subtitle }) => {
+            const name = _name || title;
+            return <Tab key={name} label={name + ' ' + subtitle} value={name.toLowerCase()} />
+          })
+        }
       </Tabs>
     </nav>
   )

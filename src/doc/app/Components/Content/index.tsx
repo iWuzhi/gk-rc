@@ -6,29 +6,26 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 
-import Button from './Button';
-import Icon from './Icon';
-import Radio from './Radio';
-
 import { useStyles } from './style';
-interface IProps {
+import useComponents from '../hooks/useComponents';
 
-}
+interface IProps {}
 
 const Content: React.FC<IProps> = () => {
   const classNames = useStyles();
+  const components = useComponents();
   return (
     <div className={classNames.content}>
       <Switch>
-          <Route path="/components/button">
-            <Button />
-          </Route>
-          <Route path="/components/icon">
-            <Icon />
-          </Route>
-          <Route path="/components/radio">
-            <Radio />
-          </Route>
+          {
+            components.map(({ name, component: Component}) => {
+              return (
+                <Route key={name} path={`/components/${name.toLowerCase()}`}>
+                  <Component />
+                </Route>
+              )
+            })
+          }
         </Switch>
     </div>
   )
