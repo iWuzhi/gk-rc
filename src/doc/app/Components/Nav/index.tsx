@@ -35,6 +35,7 @@ const Nav: React.FC<IProps> = () => {
         <Tab label="通用" disabled />
         <Tab label="Button" value='button' />
         <Tab label="Icon" value='icon' />
+        <Tab label="Radio" value='radio' />
       </Tabs>
     </nav>
   )
