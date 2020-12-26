@@ -49,6 +49,7 @@
     "webpack-merge": "^5.7.3"
   },
   "scripts": {
+    "build": "npm run build:lib && npm run build:css",
     "prebuild:lib": "rm -rf ./lib",
     "build:lib": "tsc",
     "build:css": "webpack --config ./config/webpack/css.js",
