@@ -36,6 +36,7 @@ const Header: React.FC<IProps> = (props) => {
           <div className={styles.menus}>
           <Tabs value={menu} onChange={onMenuChange}>
             <Tab label='Home' value='home' />
+            <Tab label='Tutorial' value='tutorial' />
             <Tab label='Components' value='components'/>
             <Tab label='About' value='about' />
           </Tabs>

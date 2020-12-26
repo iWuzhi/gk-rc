@@ -15,8 +15,11 @@ import { MDXProvider } from '@mdx-js/react';
 
 import CodeBlock from './Components/CodeBlock'
 
-import Components from './Components';
 import Header from './Header';
+import Home from './Home';
+import Components from './Components';
+import Tutorial from './Tutorial';
+import About from './About';
 
 import './index.css';
 
@@ -31,13 +34,22 @@ const App: React.FC<APPProps> = () => {
     <Router>
       <Header />
       <main>
-        <Switch>
-          <Route path="/components">
-            <MDXProvider components={components}>
+        <MDXProvider components={components}>
+          <Switch>
+            <Route path="/home">
+              <Home />
+            </Route>
+            <Route path="/components">
               <Components />
-            </MDXProvider>
-          </Route>
-        </Switch>
+            </Route>
+            <Route path='/tutorial'>
+              <Tutorial />
+            </Route>
+            <Route path='/about'>
+              <About />
+            </Route>
+          </Switch>
+        </MDXProvider>
       </main>
     </Router>
   )
