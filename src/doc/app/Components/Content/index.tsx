@@ -8,6 +8,7 @@ import { Route, Switch } from 'react-router-dom';
 
 import { useStyles } from './style';
 import useComponents from '../hooks/useComponents';
+import Summary from './Summary';
 
 interface IProps {}
 
@@ -17,6 +18,9 @@ const Content: React.FC<IProps> = () => {
   return (
     <div className={classNames.content}>
       <Switch>
+          <Route key='summary' path='/components/summary'>
+              <Summary />
+          </Route>
           {
             components.map(({ name, component: Component}) => {
               return (
