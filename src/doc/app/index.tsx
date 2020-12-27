@@ -3,31 +3,24 @@
  * @date 2020-12-23 16:46:48
  */
 import React from 'react';
-import {
-  HashRouter as Router,
-  Switch,
-  Route,
-  Link,
-  Redirect
-} from "react-router-dom";
-// @ts-ignore
+import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 import { MDXProvider } from '@mdx-js/react';
 
-import CodeBlock from './Components/CodeBlock'
+import CodeBlock from './Components/CodeBlock';
 
 import Header from './Header';
-import Home from './Home';
+import Home from './Home/index.mdx';
 import Components from './Components';
 import Tutorial from './Tutorial';
-import About from './About';
+import About from './About/index.mdx';
 
 import './index.css';
 
 const components = {
-  code: CodeBlock
-}
+  code: CodeBlock,
+};
 
-type APPProps ={}
+type APPProps = {};
 
 const App: React.FC<APPProps> = () => {
   return (
@@ -42,17 +35,17 @@ const App: React.FC<APPProps> = () => {
             <Route path="/components">
               <Components />
             </Route>
-            <Route path='/tutorial'>
+            <Route path="/tutorial">
               <Tutorial />
             </Route>
-            <Route path='/about'>
+            <Route path="/about">
               <About />
             </Route>
           </Switch>
         </MDXProvider>
       </main>
     </Router>
-  )
-}
+  );
+};
 
 export default App;

@@ -9,9 +9,7 @@ import Nav from './Nav';
 import Content from './Content';
 
 import { useStyles } from './style';
-interface IProps {
-
-}
+type IProps = Record<string, never>;
 
 const Components: React.FC<IProps> = () => {
   const styles = useStyles();
@@ -20,7 +18,7 @@ const Components: React.FC<IProps> = () => {
       <Nav />
       <Content />
     </section>
-  )
-}
+  );
+};
 
 export default Components;

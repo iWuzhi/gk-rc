@@ -13,7 +13,7 @@ import './global.css';
 
 // 挂载元素
 const rootEle = document.createElement('div');
-rootEle.id= 'root';
+rootEle.id = 'root';
 document.body.appendChild(rootEle);
 
-ReactDOM.render(<DocApp />, rootEle)
+ReactDOM.render(<DocApp />, rootEle);
