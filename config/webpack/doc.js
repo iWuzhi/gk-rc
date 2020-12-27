@@ -1,7 +1,9 @@
-
 const path = require('path');
-const { merge } = require('webpack-merge');
+const {
+  merge
+} = require('webpack-merge');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ESLintPlugin = require('eslint-webpack-plugin');
 
 const images = require('remark-images');
 const emoji = require('remark-emoji');
@@ -21,26 +23,29 @@ module.exports = merge(base, {
     },
   },
   module: {
-    rules: [
-      {
-        test: /\.mdx?$/,
-        use: [
-          'babel-loader', 
-          {
-            loader: '@mdx-js/loader',
-            options: {
-              remarkPlugins: [
-                yamlConfig,
-                images, 
-                emoji,
-                playground,
-                frontmatter
-              ]
-            }
+    rules: [{
+      test: /\.mdx?$/,
+      use: [
+        'babel-loader',
+        {
+          loader: '@mdx-js/loader',
+          options: {
+            remarkPlugins: [
+              yamlConfig,
+              images,
+              emoji,
+              playground,
+              frontmatter
+            ]
           }
-        ]
-      }
-    ]
+        }
+      ]
+    }]
   },
-  plugins: [new HtmlWebpackPlugin()]
+  plugins: [
+    new HtmlWebpackPlugin(),
+    new ESLintPlugin({
+      fix: true
+    })
+  ]
 });

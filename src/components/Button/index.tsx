@@ -11,9 +11,13 @@ import { useStyles } from './style';
 
 export type ButtonProps = MUButtonProps;
 
-const Button: React.FC<ButtonProps> = ({ children, ...props}) => {
+const Button: React.FC<ButtonProps> = ({ children, ...props }) => {
   const styles = useStyles();
-  return <MUButton className={styles.font} {...props}>{children}</MUButton>
-}
+  return (
+    <MUButton className={styles.font} {...props}>
+      {children}
+    </MUButton>
+  );
+};
 
 export default Button;

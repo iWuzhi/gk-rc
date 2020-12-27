@@ -1,15 +1,13 @@
 const path = require('path');
 const webpack = require('webpack');
 
-
 module.exports = {
   mode: 'development',
   plugins: [
     new webpack.ProgressPlugin(),
   ],
   module: {
-    rules: [
-      {
+    rules: [{
         test: /\.(ts|tsx|js)$/,
         loader: 'babel-loader',
         include: [path.resolve(process.cwd(), 'src')],
@@ -17,8 +15,7 @@ module.exports = {
       },
       {
         test: /.css$/,
-        use: [
-          {
+        use: [{
             loader: "style-loader"
           },
           {
