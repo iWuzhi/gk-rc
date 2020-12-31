@@ -3,7 +3,9 @@
     "src/**/*"
   ],
   "exclude": [
-    "src/doc/**/*"
+    "src/doc/**/*",
+    "**/__test__/**/*",
+    "**/__test__/**/*.test.*",
   ],
   "compilerOptions": {
     "outDir": "lib",
