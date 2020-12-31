@@ -7,27 +7,28 @@ import React from 'react';
 
 const cache = {};
 
-function importAll (r) {
-  r.keys().forEach(key => cache[key] = r(key));
+function importAll(r) {
+  r.keys().forEach((key) => (cache[key] = r(key)));
 }
-importAll(require.context('@/components', true, /index.mdx$/));
+importAll(require.context('@/components', true, /demo\/index.mdx$/));
 
 interface ComponentData {
   name: string;
-  component: React.ElementType
+  component: React.ElementType;
 }
 
-const components: ComponentData[] = Object.keys(cache).map(key => {
+const components: ComponentData[] = Object.keys(cache).map((key) => {
   const Compoent = cache[key].default;
-  const componentName = key.replace(/.*\/(\w+)\/index.mdx/, '$1');
+  const componentName = key.replace(/.*\/(\w+)\/demo\/index.mdx/, '$1');
   return {
     name: componentName,
-    component: Compoent
-  }
-})
+    component: Compoent,
+  };
+});
 
+console.log(components);
 const useComponents = (): ComponentData[] => {
   return components;
-}
+};
 
 export default useComponents;
