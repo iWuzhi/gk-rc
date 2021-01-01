@@ -81,9 +81,9 @@
     "start": "webpack-dev-server --config ./config/webpack/doc.js --color",
     "test": "jest",
     "preversion": "npm run test",
-    "release:major": "npm version major",
-    "release:minor": "npm version minor",
-    "release:patch": "npm version patch",
+    "release:major": "npm version major from-git",
+    "release:minor": "npm version minor from-git",
+    "release:patch": "npm version patch from-git",
     "postversion": "npm run build && npm publish",
     "postpublish": "git push && git push origin --tags"
   },
