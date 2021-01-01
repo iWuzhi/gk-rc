@@ -1,6 +1,6 @@
 {
   "name": "gk-rc",
-  "version": "1.1.23",
+  "version": "1.1.24",
   "description": "My webpack project",
   "main": "lib/components/index.js",
   "files": [
@@ -81,9 +81,9 @@
     "start": "webpack-dev-server --config ./config/webpack/doc.js --color",
     "test": "jest",
     "preversion": "npm run test",
-    "release:major": "npm version major -m 'chore: Update to v%s' --no-git-tag-version",
-    "release:minor": "npm version minor -m 'chore: Update to v%s' --no-git-tag-version",
-    "release:patch": "npm version patch -m 'chore: Update to v%s' --no-git-tag-version",
+    "release:major": "npm version major -m 'chore: Update to v%s'",
+    "release:minor": "npm version minor -m 'chore: Update to v%s'",
+    "release:patch": "npm version patch -m 'chore: Update to v%s'",
     "postversion": "npm run build && npm publish"
   },
   "repository": {
