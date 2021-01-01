@@ -81,9 +81,9 @@
     "start": "webpack-dev-server --config ./config/webpack/doc.js --color",
     "test": "jest",
     "preversion": "npm run test",
-    "release:major": "npm version major -m 'chore: Release v%s'",
-    "release:minor": "npm version minor -m 'chore: Release v%s'",
-    "release:patch": "npm version patch -m 'chore: Release v%s'",
+    "release:major": "npm version major -m 'chore: Update to v%s'",
+    "release:minor": "npm version minor -m 'chore: Update to v%s'",
+    "release:patch": "npm version patch -m 'chore: Update to v%s'",
     "postversion": "npm run build && npm publish"
   },
   "repository": {
