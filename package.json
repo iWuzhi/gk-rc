@@ -82,8 +82,8 @@
     "test": "jest",
     "preversion": "npm run test",
     "release": "npm version from-git -m 'chore: Release v%s'",
-    "postversion": "npm run retag && npm run build && npm publish",
-    "postpublish": "git push && git push origin --tags && git rebase master develop",
+    "postversion": "npm run build && npm publish",
+    "postpublish": "npm run retag && git push && git push origin --tags && git rebase master develop",
     "retag": "node ./scripts/git-retag.js"
   },
   "repository": {
