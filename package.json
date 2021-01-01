@@ -83,7 +83,7 @@
     "preversion": "npm run test",
     "release": "npm version from-git",
     "postversion": "npm run build && npm publish",
-    "postpublish": "git push && git push origin --tags"
+    "postpublish": "git push origin --tags"
   },
   "repository": {
     "type": "git",
