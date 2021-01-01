@@ -83,7 +83,7 @@
     "preversion": "npm run test",
     "release": "npm version from-git -m 'chore: Release v%s'",
     "postversion": "npm run build && npm publish",
-    "postpublish": "npm run retag && ",
+    "postpublish": "npm run retag",
     "retag": "node ./scripts/git-retag.js"
   },
   "repository": {
